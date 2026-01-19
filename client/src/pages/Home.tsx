@@ -17,7 +17,7 @@ export default function Home() {
   useEffect(() => {
     // Trigger animations on mount
     const timer = setTimeout(() => {
-      setVisibleProjects([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]);
+      setVisibleProjects([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]);
     }, 100);
     return () => clearTimeout(timer);
   }, []);
@@ -74,6 +74,16 @@ export default function Home() {
       telegram_url: "https://github.com/yourusername/fitness-tracker",
       image: "/images/feature_seen.png",
       featured: false,
+    }, {
+      id: 13,
+      title: "E-Commerce API ",
+      description: "",
+      technologies: ["Node JS", "Express Js", "MySql"],
+      // googlePlayUrl: "https://play.google.com/store/apps/details?id=com.example.taskmanager",
+      // telegramurl: "https://t.me/seen_app_sy",
+      githubUrl: "https://github.com/habibkh963/ecommerace_node_js.git",
+      image: "/images/nodejsDark.svg",
+      featured: true,
     }, {
       id: 5,
       title: "Gen AI App",
@@ -435,7 +445,7 @@ export default function Home() {
                 GitHub
               </a>
               <a
-                href="https://www.linkedin.com/in/al-habib-khadaam-40b2a822a"
+                href="https://www.linkedin.com/in/al-habib-khaddam-40b2a822a"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-primary text-primary font-medium hover:bg-primary/5 transition-colors"
