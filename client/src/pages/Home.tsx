@@ -31,28 +31,29 @@ export default function Home() {
       technologies: ["Flutter", "Firebase", "Bloc"],
       googlePlayUrl: "https://play.google.com/store/apps/details?id=com.souqcar.app&pcampaignid=web_share",
       // githubUrl: "https://github.com/yourusername/ecommerce-app",
+      appstorUrl: "https://apps.apple.com/us/app/سوق-سيارتي/id6759757787",
       image: "/images/playstore.png",
       featured: true,
     },
     {
       id: 1,
-      title: "One Store",
-      description: "E-commerce application for online shopping.",
-      technologies: ["Flutter", "Cubit", "FireBase"],
-      appstorUrl: '',
-      googlePlayUrl: "https://play.google.com/store/apps/details?id=com.onestore.onestore&pcampaignid=web_share",
+      title: "Bio Ghar",
+      description: "The BioGhar app is your gateway to luxurious skincare products designed to elevate your daily beauty routine. Discover a range of skincare, haircare, and body care products crafted with quality, luxury, and exceptional care.",
+      technologies: ["Flutter", "GetX"],
+      googlePlayUrl: "https://play.google.com/store/apps/details?id=com.bioghar.cosmetics&pcampaignid=web_share",
       // githubUrl: "https://github.com/yourusername/weather-app",
-      image: "/images/1080logo.png",
-      featured: false,
+      image: "/images/bioghar.png",
+      featured: true,
     },
     {
-      id: 1,
+      id: 2,
       title: "Alisar Library",
       description: "An app to Help students study from thier Phones adding Notes,and study offline",
       technologies: ["Flutter", "GetX", "Hive"],
       googlePlayUrl: "https://play.google.com/store/apps/details?id=com.app.alissarlibrary",
       // githubUrl: "https://github.com/yourusername/weather-app",
       image: "/images/landing.png",
+      appstorUrl: "https://apps.apple.com/us/app/alisar-library-مكتبة-أليسار/id6759269851",
       featured: false,
     },
     {
@@ -70,9 +71,19 @@ export default function Home() {
       title: "Seen",
       description: "Educational quiz app with interactive quizzes and leaderboards.",
       technologies: ["Flutter", "SQfLite", "GetX", "Background Services",],
-      googlePlayUrl: "https://play.google.com/store/apps/details?id=com.example.fitness",
-      telegram_url: "https://github.com/yourusername/fitness-tracker",
+      googlePlayUrl: "https://play.google.com/store/apps/details?id=com.seenapp.seen",
+
       image: "/images/feature_seen.png",
+      featured: false,
+    }, {
+      id: 5,
+      title: "One Store",
+      description: "E-commerce application for online shopping.",
+      technologies: ["Flutter", "Cubit", "FireBase"],
+      appstorUrl: '',
+      googlePlayUrl: "https://play.google.com/store/apps/details?id=com.onestore.onestore&pcampaignid=web_share",
+      // githubUrl: "https://github.com/yourusername/weather-app",
+      image: "/images/1080logo.png",
       featured: false,
     }, {
       id: 13,
@@ -85,7 +96,7 @@ export default function Home() {
       image: "/images/nodejsDark.svg",
       featured: true,
     }, {
-      id: 5,
+      id: 6,
       title: "Gen AI App",
       description: "Application leveraging AI for content generation and intelligent features.",
       technologies: ["Flutter", "Singleton", "Bloc", "Reactive Chat",],
@@ -93,7 +104,7 @@ export default function Home() {
       image: "public/images/flutter.png",
       featured: false,
     }, {
-      id: 6,
+      id: 7,
       title: "Dental Flow",
       description: "Desktop app for clinic organization and management.",
       technologies: ["Flutter", "GetX", "Sqflite", "Windows App",],
@@ -101,7 +112,7 @@ export default function Home() {
       image: "/images/Screenshot (527).png",
       featured: false,
     }, {
-      id: 7,
+      id: 8,
       title: "Doodge Game",
       description: "A thrilling dodge game built with Flutter and the Flame game engine. Navigate your spaceship through an endless barrage of falling meteors, testing your reflexes and strategy in this fast-paced arcade experience.",
       technologies: ["Flutter", "Flame: 2D game engine for Flutter",],
@@ -111,7 +122,7 @@ export default function Home() {
     },
 
     {
-      id: 8,
+      id: 9,
       title: "Live Streaming App",
       description: "Currently Working on : A live streaming application built with Flutter, enabling users to broadcast and watch live video content seamlessly. Featuring real-time interaction, chat functionality, and high-quality streaming capabilities for an engaging user experience.",
       technologies: ["Flutter", "bloc", "zego Cloud", "socket.io", "AI Face Recognition"],
@@ -120,7 +131,7 @@ export default function Home() {
       featured: false,
     },
     {
-      id: 9,
+      id: 10,
       title: " kindergarten Manage app ",
       description: "Smart Application to Help parents choose what there childs can eat in the kindergarten ",
       technologies: ["Flutter", "getX",],
@@ -128,7 +139,7 @@ export default function Home() {
       image: "/images/flutter.png",
       featured: false,
     }, {
-      id: 2,
+      id: 11,
       title: "Pets Care App",
       description: "Assists pet owners with appointments, meal reminders, custom activities, and acommunity for sharing tips.",
       technologies: ["Flutter", "Cubit", "Work Manager"],
@@ -137,7 +148,7 @@ export default function Home() {
       image: "/images/flutter.png",
       featured: false,
     }, {
-      id: 10,
+      id: 12,
       title: "Treasure Island ",
       description: "Visual Competions Tow teams compete to find the treasure first by answering questions. ",
       technologies: ["Flutter", "GetX",],
@@ -159,7 +170,7 @@ export default function Home() {
     // }, 
 
     {
-      id: 12,
+      id: 13,
       title: "Gym App ",
       description: "",
       technologies: ["Node JS", "Express Js", "Mongo DB"],
@@ -360,16 +371,6 @@ export default function Home() {
                         >
                           <Github size={18} />
                           GitHub
-                        </a>
-                      ) : null}    {project.telegram_url != null ? (
-                        <a
-                          href={project.telegram_url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-primary text-primary font-medium hover:bg-primary/5 transition-colors"
-                        >
-                          {/* <Github size={18} /> */}
-                          Telegram
                         </a>
                       ) : null}
 
